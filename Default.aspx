@@ -9,7 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-       Home Page
+       Home Page<br />
+        <br />
+&nbsp;<asp:HyperLink ID="DiagnosticsLink" runat="server" NavigateUrl="~/Diagnostics.aspx">Diagnostics</asp:HyperLink>
+
     </div>
     </form>
 </body>

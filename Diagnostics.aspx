@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Crash.aspx.cs" Inherits="Crash"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Diagnostics.aspx.cs" Inherits="Crash"%>
 
 <!DOCTYPE html>
 
@@ -24,6 +24,10 @@
         
         <asp:Button ID="CrashPage" runat="server" Text="Crash" OnClick="CrashPage_Click" Width="150px" />
 
+        <br />
+        
+        <br />
+        <asp:Label ID="Message" runat="server" Text=""></asp:Label>
     </div>
     </form>
 </body>

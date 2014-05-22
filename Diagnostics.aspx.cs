@@ -19,18 +19,25 @@ public partial class Crash : System.Web.UI.Page
 
     protected void TraceError_Click(object sender, EventArgs e)
     {
-        System.Diagnostics.Trace.TraceError(string.Format("Error trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture)));
+        string message = string.Format("Error trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture));
+        System.Diagnostics.Trace.TraceError(message);
+        Message.Text = message;
     }
     protected void TraceWarning_Click(object sender, System.EventArgs e)
     {
-        System.Diagnostics.Trace.TraceWarning(string.Format("Warning trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture)));
+        string message = string.Format("Warning trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture));
+        System.Diagnostics.Trace.TraceWarning(message);
+        Message.Text = message;
     }
     protected void TraceInfo_Click(object sender, System.EventArgs e)
     {
-        System.Diagnostics.Trace.TraceInformation(string.Format("Information trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture)));
+        string message = string.Format("Information trace at {0}", DateTime.Now.ToString(CultureInfo.CurrentUICulture));
+        System.Diagnostics.Trace.TraceInformation(message);
+        Message.Text = message;
     }
     protected void CrashPage_Click(object sender, System.EventArgs e)
     {
+        Message.Text = string.Empty;
         throw new Exception("Crashing the page for test purpose...");
     }
 }
