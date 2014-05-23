@@ -28,6 +28,10 @@
         
         <br />
         <asp:Label ID="Message" runat="server" Text=""></asp:Label>
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLinkHomePage" runat="server" NavigateUrl="~/Default.aspx">Home Page</asp:HyperLink>
+        <br />
     </div>
     </form>
 </body>

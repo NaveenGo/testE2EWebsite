@@ -10,6 +10,9 @@ using System.Web.UI.WebControls;
 using System;
 using System.Globalization;
 
+//http://msdn.microsoft.com/en-us/library/system.diagnostics.tracelistener.aspx
+//http://msdn.microsoft.com/en-us/library/vstudio/wwh16c6c(v=vs.100).aspx
+//http://www.hanselman.com/blog/StreamingDiagnosticsTraceLoggingFromTheAzureCommandLinePlusGlimpse.aspx
 public partial class Crash : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
